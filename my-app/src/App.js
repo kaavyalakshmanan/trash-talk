@@ -80,7 +80,7 @@ export default function Album() {
               Want to know whether something belongs in a recycling bin or garbage can? Ask the Trash Talk bot and find out where your closest depot is as well as more important info!
             </Typography>
             <div style={{paddingLeft: '23%'}}>
-              <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/dcb56c84-9780-4d67-9e97-2da884430df1"></iframe>
+              <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/49fdb6c1-4d37-4f06-b897-5328ce048b64"></iframe>
             </div>
           </Container>
         </div>
