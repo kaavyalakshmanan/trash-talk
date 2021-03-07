@@ -1,50 +1,40 @@
 {
-  "_from": "all",
-  "_id": "all@0.0.0",
-  "_inBundle": false,
-  "_integrity": "sha1-+yqnXUdZ1A457LsRj6vwzBH/VU8=",
-  "_location": "/all",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "all",
-    "name": "all",
-    "escapedName": "all",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/all/-/all-0.0.0.tgz",
-  "_shasum": "fb2aa75d4759d40e39ecbb118fabf0cc11ff554f",
-  "_spec": "all",
-  "_where": "C:\\Users\\Amy George\\PycharmProjects\\trash-talk\\app",
-  "author": {
-    "name": "'Dominic Tarr'",
-    "email": "dominic.tarr@gmail.com",
-    "url": "http://dominictarr.com"
-  },
-  "bugs": {
-    "url": "https://github.com/dominictarr/all/issues"
-  },
-  "bundleDependencies": false,
-  "dependencies": {},
-  "deprecated": false,
-  "description": "callback when all callbacks have fired.",
-  "devDependencies": {},
-  "homepage": "https://github.com/dominictarr/all",
-  "license": "MIT",
-  "name": "all",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/dominictarr/all.git"
+  "name": "app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.3",
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "test": "set -e; for t in test/*.js; do node $t; done"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "version": "0.0.0"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
