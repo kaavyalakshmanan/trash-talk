@@ -1,5 +1,6 @@
 from google.cloud import dialogflow
 from google.oauth2 import service_account
+
 credentials = service_account.Credentials.from_service_account_file('C:/Users/Amy George/PycharmProjects/trash-talk/recyclebot-3b638be41671.json')
 
 
@@ -44,4 +45,15 @@ def detect_intent_texts(project_id, session_id, texts, language_code):
 
 
 
-detect_intent_texts("propane-analogy-270422", "123456789", "I know french", "en-US")
+detect_intent_texts("propane-analogy-270422", "123456789", ["I know french"], "en-US")
+
+
+import requests
+
+resp = requests.get('https://dialogflow.googleapis.com/v2/projects/propane-analogy-270422/agent/entityTypes/compost')
+if resp.status_code != 200:
+    # This means something went wrong.
+    # raise ApiError('GET /tasks/ {}'.format(resp.status_code))
+    print("error: ", resp.status_code)
+for todo_item in resp.json():
+    print(todo_item)
