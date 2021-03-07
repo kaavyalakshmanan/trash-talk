@@ -79,6 +79,9 @@ export default function Album() {
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
               Want to know whether something belongs in a recycling bin or garbage can? Ask the Trash Talk bot and find out where your closest depot is as well as more important info!
             </Typography>
+            <div style={{paddingLeft: '23%'}}>
+              <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/dcb56c84-9780-4d67-9e97-2da884430df1"></iframe>
+            </div>
           </Container>
         </div>
       </main>
