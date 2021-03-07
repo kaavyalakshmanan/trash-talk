@@ -1,3 +1,13 @@
+from google.cloud import dialogflow
+from google.oauth2 import service_account
+credentials = service_account.Credentials.from_service_account_file('C:/Users/Amy George/PycharmProjects/trash-talk/recyclebot-3b638be41671.json')
+
+
+def create_intent(project_id, display_name, training_phrases_parts,
+                  message_texts):
+    """Create an intent of the given intent type."""
+    # intents_client = dialogflow.IntentsClient(credentials=credentials)
+    # session_client = dialogflow.SessionsClient(credentials=credentials)
 
 
 def detect_intent_texts(project_id, session_id, texts, language_code):
@@ -6,10 +16,9 @@ def detect_intent_texts(project_id, session_id, texts, language_code):
     Using the same `session_id` between requests allows continuation
     of the conversation."""
     from google.cloud import dialogflow
-    from google.cloud import storage
-    storage_client = storage.Client()
 
-    session_client = dialogflow.SessionsClient()
+    session_client = dialogflow.SessionsClient(credentials=credentials)
+    print(session_client)
 
     session = session_client.session_path(project_id, session_id)
     print("Session path: {}\n".format(session))
@@ -35,4 +44,4 @@ def detect_intent_texts(project_id, session_id, texts, language_code):
 
 
 
-detect_intent_texts("trashtalk-mfjt", "123456789", "I know french", "en-US")
+detect_intent_texts("propane-analogy-270422", "123456789", "I know french", "en-US")
